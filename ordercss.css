@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@1,500;1,700;1,900&display=swap');
+:root{
+--Paleblue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Red hat display", sans-serif;
+    background-color: var(--Paleblue);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    min-height: 100vh;
+}
+.bg_image{
+    background: url("./order-summary-component-main/images/pattern-background-mobile.svg") no-repeat
+     center/cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--Desaturated-blue);
+
+}
+.btn{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.btn-pri{
+    background-color: var(--Bright-blue);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.btn-pri:hover , .btn-change:hover{
+    opacity: 0.8;
+}
+.btn-sec{
+    background-color: transparent;
+    color: var(--Desaturated-blue);
+}
+.btn:hover{
+    color: hsl(223, 47%, 23%);
+}
+.btn-change{
+    background-color:transparent ;
+    color: var(--Bright-blue);
+    text-decoration: underline;
+
+}
+.cont{
+    background-color: #fff;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px hsl(228, 45%, 44%);
+
+}
+.cont p.desc{
+    padding: 0 30px;
+}
+.cont .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cont img.hero{
+    width: 100%;
+    border-radius: 10px 10px 0  0;
+}
+.cont .pricing{
+    margin:30px auto;
+    background-color: var(--Very-pale-blue);
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.cont .pricing article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont .pricing article img{
+    margin-right: 10px;
+
+}
+.cont h1{
+    color: hsl(223, 47%, 23%);
+    margin: 10px 0;
+
+}
+button{
+    font-family: "Red hat display", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/*Attribution*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media (min-width:768px)
+{
+    .bg_image{
+        background: url("./images/pattern-background-desktop.svg") no-repeat center/cover;
+        height: 50vh;
+    }
+    .cont{
+        width: 500px;
+    }
+}
+
